@@ -1,8 +1,61 @@
 /********************
  * YOUR CODE BELOW! *
  ********************/
+function moreThan5(num){
+  return num > 5;
+}
 
+function topScore(score, topScore){
+  return score > topScore
+}
 
+function isInDanger(grade){
+ return grade >= 60 && grade <= 71;
+}
+
+function isCoasting(grade){
+  return grade >= 72 && grade <=83;
+}
+
+function isSucceeding(num){
+  return num >= 84 && num <= 92;
+}
+
+function isFailing(grade){
+  return grade < 60;
+}
+
+function isAcing(grade){
+  return grade > 92;
+}
+
+function isStudent(person){
+  return person === 'student'
+}
+
+function isTeacher(person){
+  return person === 'teacher'
+}
+
+function isAdmin(person){
+  return person === 'admin'
+}
+
+function isElementary(person){
+  return person === 'elementary'
+}
+
+function areDifferentPeople(one, two){
+  return one != two
+}
+
+function isMiddleSchoolTeacher(role, grade){
+  return  role === 'teacher' && grade >= 6 && grade <= 8;
+}
+
+function notAnElementarySchoolAdministrator(level, role) {
+return level !== 'elementary' || role !== 'admin'
+}
 
 
 
@@ -82,7 +135,7 @@ module.exports = {
   isTeacher,
   isAdmin,
   isElementary,
-  differentPeople,
-  notAnElementarySchoolAdministrator,
+  areDifferentPeople,
   isMiddleSchoolTeacher,
+  notAnElementarySchoolAdministrator,
 }
